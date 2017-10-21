@@ -5,7 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class Main {
+public class CalculatorMain {
     public static void main(String[] args) {
         //1.2线程的创建和运行
         for (int i = 0; i < 10; i++) {
