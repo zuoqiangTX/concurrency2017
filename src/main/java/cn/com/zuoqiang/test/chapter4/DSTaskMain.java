@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 public class DSTaskMain {
     public static void main(String[] args) {
         ScheduledExecutorService executor = Executors.newScheduledThreadPool(1);
-        System.out.println("Main Started :" + new Date());
+        System.out.println("Main Started :" + new Date() + " 1s后开始执行延时任务");
         DSTask task = new DSTask("Task");
         ScheduledFuture<?> result = executor.scheduleAtFixedRate(task, 1, 2, TimeUnit.SECONDS);
         for (int i = 0; i < 10; i++) {

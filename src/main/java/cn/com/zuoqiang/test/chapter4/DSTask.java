@@ -11,12 +11,12 @@ public class DSTask implements Runnable {
     }
 
     public void run() {
+        System.out.println("任务执行时间为" + new Date());
         long duration = (long) (Math.random() * 100);
         try {
             TimeUnit.MILLISECONDS.sleep(duration);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("任务执行了" + duration + "s.");
     }
 }
