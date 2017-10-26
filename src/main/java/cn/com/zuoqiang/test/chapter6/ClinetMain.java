@@ -17,6 +17,6 @@ public class ClinetMain {
             }
             TimeUnit.MILLISECONDS.sleep(300);
         }
-        System.out.println("Main : end");
+        System.out.println("Main : end\n");
     }
 }
