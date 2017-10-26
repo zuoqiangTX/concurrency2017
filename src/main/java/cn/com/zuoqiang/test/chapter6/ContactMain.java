@@ -6,7 +6,7 @@ import java.util.concurrent.ConcurrentSkipListMap;
 
 public class ContactMain {
     public static void main(String[] args) throws InterruptedException {
-        ConcurrentSkipListMap<String, Contact> map = new ConcurrentSkipListMap<String, Contact>();
+      /*  ConcurrentSkipListMap<String, Contact> map = new ConcurrentSkipListMap<String, Contact>();
         Thread[] threads = new Thread[25];
         int counter = 0;
         for (char i = 'A'; i < 'Z'; i++) {
@@ -33,6 +33,6 @@ public class ContactMain {
             if (element != null) {
                 contact = element.getValue();
             }
-        } while (element != null);
+        } while (element != null);*/
     }
 }
