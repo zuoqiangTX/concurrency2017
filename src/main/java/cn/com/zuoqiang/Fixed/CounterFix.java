@@ -3,11 +3,9 @@ package cn.com.zuoqiang.Fixed;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static com.zuoqiang.cn.test.Counter.downLatch;
-
 public class CounterFix {
     public static AtomicInteger num = new AtomicInteger(0);
-    static CountDownLatch countDownLatch = new CountDownLatch(30);
+    static CountDownLatch downLatch = new CountDownLatch(30);
 
     public static void main(String[] args) throws InterruptedException {
         for (int i = 0; i < 30; i++) {
